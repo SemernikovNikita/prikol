@@ -1,0 +1,121 @@
+:root {
+    --main-bg-color: #e5e5e5;
+    --secondary-color: #000000;
+}
+
+* {
+    font-family: "Century Gothic";
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 40px;
+}
+header {
+    color: var(--secondary-color-color);
+    padding: 4px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+h1 {
+    margin: 20px;
+}
+
+.info {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.info-text {
+    margin-right: 3px;
+    font-family: "JetBrains Mono";
+}
+
+.text {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.text2 {
+    font-size: 19px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    display: inline;
+}
+
+.text3 {
+    font-size: 15px;
+    margin: 3px;
+    background-color: var(--secondary-color);
+    display: inline;
+}
+
+.info2 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.info-block {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: black !important;
+    border-radius: 3px !important;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.btext {
+    color: #e5e5e5;
+}
+
+.image-container {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    animation: log 3.5s ease-out;
+}
+
+.image-container.show {
+    display: block;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(72000deg);
+    }
+}
+
+@keyframes log {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(15);
+        margin-left: 50%;
+        margin-top: 100px;
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
