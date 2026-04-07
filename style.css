@@ -90,7 +90,7 @@ h1 {
     max-width: 500px;
     width: 100%;
     border-radius: 12px;
-    animation: log 3.5s ease-out;
+    animation: log 2.5s ease-out;
 }
 
 .image-container.show {
